@@ -4,6 +4,7 @@ export const apiURL = (no: string) =>
 
 export * from './frame/RequestData'
 export * from './frame/ResponseData'
+export * from './frame/DataInfo'
 
 export * from './api/DailyTraining'
 export * from './api/EntryHorseWeightInfo'

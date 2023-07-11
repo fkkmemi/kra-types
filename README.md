@@ -23,7 +23,12 @@ typescript 개발을 위한 마사회 API type 정보, 지정된 type으로 코�
 ## example
 
 ```ts
-import { RacePlan, RacePlanRequestParams, RacePlanInfo } from 'kra-types'
+import {
+	RacePlan,
+	RacePlanRequestParams,
+	racePlanInfo,
+	RsponseData,
+} from 'kra-types'
 
 const getRacePlans = async (
 	serviceKey: string,
@@ -45,7 +50,7 @@ const getRacePlans = async (
 	if (rc_year) params.rc_year = meet
 
 	const r = await api.get<ResponseData<RacePlan[] | RacePlan>>(
-		RacePlanInfo.url,
+		racePlanInfo.url,
 		{
 			params,
 		},

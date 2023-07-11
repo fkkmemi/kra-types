@@ -58,8 +58,8 @@ export const ridingTestResultInfo: DataInfo = {
 export interface RidingTestResultRequestParams extends RequestParams {
 	meet?: number
 	tr_date?: number
-	tr_month?: number
-	tr_year?: number
+	tr_month?: number // 202306: 400
+	tr_year?: number // 2022: 4574
 	_type?: string
 }
 
