@@ -5,7 +5,7 @@ import { RequestParams } from '../frame/RequestData'
 //   url: 'https://www.data.go.kr/data/15056499/openapi.do',
 // }
 
-export const url = '/B551015/API72_1/racePlan_1'
+export const racePlanURL = '/B551015/API72_1/racePlan_1'
 
 export interface RequestParamsRacePlan extends RequestParams {
   meet?: number // origin: meet?: string
@@ -61,4 +61,3 @@ export const KeyName = {
   stRating: '레이팅하한조건',
 }
 
-export default RacePlan
