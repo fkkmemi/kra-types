@@ -28,7 +28,6 @@ export const trainerInfoInfo: DataInfo = {
 		trNo: '조교사번호',
 		winRateT: '통산승률',
 		winRateY: '최근1년승률',
-		createdAt: '생성일',
 	},
 }
 
@@ -61,5 +60,4 @@ export interface TrainerInfo {
 	trNo: string
 	winRateT: number
 	winRateY: number
-	createdAt?: number
 }

@@ -1,7 +1,7 @@
 import { RequestParams } from '../frame/RequestData'
 import DataInfo from '../frame/DataInfo'
 
-export const StartingTrainingInfo: DataInfo = {
+export const startingTrainingInfo: DataInfo = {
 	name: '출발훈련 정보',
 	apiNo: '15059043',
 	url: '/B551015/API22_1/startingTranning_1',
@@ -15,8 +15,6 @@ export const StartingTrainingInfo: DataInfo = {
 		prName: '기승자',
 		remark: '훈련결과',
 		trDate: '훈련일자',
-		createdAt: '생성일',
-		id: 'hrNo-trDate',
 	},
 }
 // todo: url 철자 표기 문제.. meet 제거

@@ -1,7 +1,7 @@
 import { RequestParams } from '../frame/RequestData'
 import DataInfo from '../frame/DataInfo'
 
-export const SwimTrainingInfo: DataInfo = {
+export const swimTrainingInfo: DataInfo = {
 	name: '수영훈련정보',
 	apiNo: '15063981',
 	url: '/B551015/API216/SwimTr',

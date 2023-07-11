@@ -42,6 +42,4 @@ export interface Track {
 	weather: string
 	windDirection: string
 	windSpeed: string
-	createdAt?: number
-	id?: string
 }
