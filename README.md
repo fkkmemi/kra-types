@@ -10,7 +10,7 @@ typescript 개발을 위한 마사회 API type 정보, 지정된 type으로 코�
 
 ```ts
 
-import RacePlan, { RequestParamsRacePlan} from '@/api/RacePlan'
+import { RacePlan, RequestParamsRacePlan} from 'kra-types'
 
 const getRacePlans = async (
   serviceKey: string,
