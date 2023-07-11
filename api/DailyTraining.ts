@@ -1,11 +1,12 @@
 import { RequestParams } from '../frame/RequestData'
+import DataInfo from '../frame/DataInfo'
 
-export const dailyTrainingInfo = {
+export const dailyTrainingInfo: DataInfo = {
 	name: '일별훈련 상세정보',
 	apiNo: '15058782',
 	url: '/B551015/API18_1/dailyTraining_1',
 	key: 'hrNo-stTime',
-	keyName: <Record<string, string>>{
+	keyName: {
 		chulGubun: '출주예정마',
 		hrName: '마명',
 		hrNo: '마번',

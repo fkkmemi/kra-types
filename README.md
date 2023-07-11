@@ -4,13 +4,26 @@ typescript 개발을 위한 마사회 API type 정보, 지정된 type으로 코�
 
 ## list
 
+- DailyTraining
+- EntryHorseWeightInfo
+- JockeyInfo
+- JockeyResult
+- RaceHorseClinic
+- RaceHorseInfo
+- RaceHorseResult
 - RacePlan
 - RaceResult
+- RidingTestResult
+- SectionRecord
+- StartingTraining
+- SwimTraining
+- Track
+- TrainerInfo
 
 ## example
 
 ```ts
-import { RacePlan, RacePlanRequestParams, RacePlanURL } from 'kra-types'
+import { RacePlan, RacePlanRequestParams, RacePlanInfo } from 'kra-types'
 
 const getRacePlans = async (
 	serviceKey: string,
@@ -31,9 +44,12 @@ const getRacePlans = async (
 	if (rc_month) params.rc_month = meet
 	if (rc_year) params.rc_year = meet
 
-	const r = await api.get<ResponseData<RacePlan[] | RacePlan>>(RacePlanURL, {
-		params,
-	}) // api is axios, fetch, etc..
+	const r = await api.get<ResponseData<RacePlan[] | RacePlan>>(
+		RacePlanInfo.url,
+		{
+			params,
+		},
+	) // api is axios, fetch, etc..
 	if (!r.data.response.body) return []
 	if (!r.data.response.body.items) return []
 	const itemsItem = r.data.response.body.items.item

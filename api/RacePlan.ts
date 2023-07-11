@@ -1,6 +1,7 @@
 import { RequestParams } from '../frame/RequestData'
+import DataInfo from '../frame/DataInfo'
 
-export const racePlanInfo = {
+export const racePlanInfo: DataInfo = {
 	name: '경주계획표',
 	apiNo: '15056499', // 'https://www.data.go.kr/data/15056499/openapi.do',
 	url: '/B551015/API72_1/racePlan_1',

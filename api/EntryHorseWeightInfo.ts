@@ -1,11 +1,12 @@
 import { RequestParams } from '../frame/RequestData'
+import DataInfo from '../frame/DataInfo'
 
-export const entryHorseWeightInfoInfo = {
+export const entryHorseWeightInfoInfo: DataInfo = {
 	name: '출전마 체중 정보',
 	apiNo: '15057498',
 	key: 'hrNo-rcDate',
 	url: '/B551015/API25_1/entryHorseWeightInfo_1',
-	keyName: <Record<string, string>>{
+	keyName: {
 		budam: '시행경마장명',
 		chulNo: '마번(출주번호)',
 		hrName: '마명',

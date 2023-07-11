@@ -1,6 +1,7 @@
 import { RequestParams } from '../frame/RequestData'
+import DataInfo from '../frame/DataInfo'
 
-export const raceResultInfo = {
+export const raceResultInfo: DataInfo = {
 	name: '경주기록 정보',
 	apiNo: '15058305',
 	url: '/B551015/API4_2/raceResult_2',
