@@ -1,8 +1,8 @@
 export declare const baseURL = "https://apis.data.go.kr";
 export declare const apiURL: (no: string) => string;
-export * from './frame/RequestData';
-export * from './frame/ResponseData';
-export * from './frame/DataInfo';
+export * from './common/RequestData';
+export * from './common/ResponseData';
+export * from './common/DataInfo';
 export * from './api/DailyTraining';
 export * from './api/EntryHorseWeightInfo';
 export * from './api/JockeyInfo';

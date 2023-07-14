@@ -1,6 +1,20 @@
-# 한국마사회 API types
+# 한국마사회 API Helper
 
-typescript 개발을 위한 마사회 API type 정보, 지정된 type으로 코딩 실수를 미연에 방지
+마사회 API type 정보, 지정된 type으로 코딩 실수를 미연에 방지
+
+## install
+
+### npm
+
+```bash
+$ npm install kra --save-dev
+```
+
+### yarn
+
+```bash
+$ yarn add --dev kra
+```
 
 ## list
 
@@ -20,15 +34,14 @@ typescript 개발을 위한 마사회 API type 정보, 지정된 type으로 코�
 - Track
 - TrainerInfo
 
+> uptadedAt 23.7.15
+
 ## example
 
+### racePlan 작성법
+
 ```ts
-import {
-	RacePlan,
-	RacePlanRequestParams,
-	racePlanInfo,
-	RsponseData,
-} from 'kra-types'
+import { RacePlan, RacePlanRequestParams, racePlanInfo, RsponseData } from 'kra'
 
 const getRacePlans = async (
 	serviceKey: string,

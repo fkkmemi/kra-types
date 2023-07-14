@@ -1,5 +1,5 @@
-import { RequestParams } from '../frame/RequestData';
-import DataInfo from '../frame/DataInfo';
+import { RequestParams } from '../common/RequestData';
+import DataInfo from '../common/DataInfo';
 export declare const trainerInfoInfo: DataInfo;
 export interface TrainerInfoRequestParams extends RequestParams {
     tr_name?: string;

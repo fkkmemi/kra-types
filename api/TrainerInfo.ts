@@ -1,5 +1,5 @@
-import { RequestParams } from '../frame/RequestData'
-import DataInfo from '../frame/DataInfo'
+import { RequestParams } from '../common/RequestData'
+import DataInfo from '../common/DataInfo'
 
 export const trainerInfoInfo: DataInfo = {
 	name: '조교사 상세정보',

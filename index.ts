@@ -2,9 +2,9 @@ export const baseURL = 'https://apis.data.go.kr'
 export const apiURL = (no: string) =>
 	`https://www.data.go.kr/data/${no}/openapi.do`
 
-export * from './frame/RequestData'
-export * from './frame/ResponseData'
-export * from './frame/DataInfo'
+export * from './common/RequestData'
+export * from './common/ResponseData'
+export * from './common/DataInfo'
 
 export * from './api/DailyTraining'
 export * from './api/EntryHorseWeightInfo'

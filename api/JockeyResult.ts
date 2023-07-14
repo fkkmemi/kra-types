@@ -1,5 +1,5 @@
-import { RequestParams } from '../frame/RequestData'
-import DataInfo from '../frame/DataInfo'
+import { RequestParams } from '../common/RequestData'
+import DataInfo from '../common/DataInfo'
 
 export const jockeyResultInfo: DataInfo = {
 	name: '기수 성적 정보',
