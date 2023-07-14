@@ -3,7 +3,7 @@ export interface ResponseHeader {
 	resultMsg: string
 }
 export interface ResponseBody<T> {
-	items: '' | { item: T | T[] }
+	items: '' | { item: T }
 	numOfRows: number
 	pageNo: number
 	totalCount: number
