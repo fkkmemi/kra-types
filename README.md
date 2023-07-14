@@ -7,13 +7,13 @@
 ### npm
 
 ```bash
-$ npm install kra --save-dev
+$ npm install kra
 ```
 
 ### yarn
 
 ```bash
-$ yarn add --dev kra
+$ yarn add kra
 ```
 
 ## list
