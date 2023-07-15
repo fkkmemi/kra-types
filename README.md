@@ -7,13 +7,13 @@
 ### npm
 
 ```bash
-$ npm install kra
+$ npm install kra-types
 ```
 
 ### yarn
 
 ```bash
-$ yarn add kra
+$ yarn add kra-types
 ```
 
 ## list
