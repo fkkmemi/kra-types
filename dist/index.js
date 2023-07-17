@@ -14,13 +14,10 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.apiURL = exports.baseURL = void 0;
-exports.baseURL = 'https://apis.data.go.kr';
-const apiURL = (no) => `https://www.data.go.kr/data/${no}/openapi.do`;
-exports.apiURL = apiURL;
 __exportStar(require("./common/RequestData"), exports);
 __exportStar(require("./common/ResponseData"), exports);
 __exportStar(require("./common/DataInfo"), exports);
+__exportStar(require("./constant"), exports);
 __exportStar(require("./api/DailyTraining"), exports);
 __exportStar(require("./api/EntryHorseWeightInfo"), exports);
 __exportStar(require("./api/JockeyInfo"), exports);
