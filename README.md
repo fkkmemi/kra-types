@@ -1,6 +1,8 @@
 # 한국마사회 API Helper
 
-마사회 API type 정보, 지정된 type으로 코딩 실수를 미연에 방지
+마사회 API type 정보와 url등 정리
+
+typescript의 경우 지정된 type으로 코딩 실수를 미연에 방지
 
 ## install
 
