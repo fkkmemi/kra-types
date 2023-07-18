@@ -41,36 +41,34 @@ $ yarn add kra-types
 ### racePlan 작성법
 
 ```ts
-import { RacePlan, RacePlanRequestParams, racePlanInfo, RsponseData } from 'kra'
+import {
+	RacePlan,
+	RacePlanRequestParams,
+	racePlanInfo,
+	RsponseData,
+	Meet,
+} from 'kra-types'
 
-const getRacePlans = async (
-	serviceKey: string,
-	pageNo: number,
-	numOfRows: number,
-	meet?: number,
-	rc_date?: number,
-	rc_month?: number,
-	rc_year?: number,
-) => {
-	const params: RacePlanRequestParams = {
-		serviceKey,
-		pageNo,
-		numOfRows,
-	}
-	if (meet) params.meet = meet
-	if (rc_date) params.rc_date = meet
-	if (rc_month) params.rc_month = meet
-	if (rc_year) params.rc_year = meet
-
+const getRacePlans = async (params: RacePlanRequestParams) => {
 	const r = await api.get<ResponseData<RacePlan[] | RacePlan>>(
 		racePlanInfo.url,
-		{
-			params,
-		},
+		{ params },
 	) // api is axios, fetch, etc..
 	if (!r.data.response.body) return []
 	if (!r.data.response.body.items) return []
 	const itemsItem = r.data.response.body.items.item
 	return Array.isArray(itemsItem) ? itemsItem : [itemsItem] // because length 1 is not array
 }
+
+// use
+
+getRacePlans({
+	serviceKey,
+	pageNo: 1,
+	numOfRows: 20,
+	meet: Meet['서울'].no,
+	rc_date: 20230714,
+}).then((rs) => {
+	console.log(rs)
+})
 ```
