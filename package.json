@@ -1,6 +1,6 @@
 {
 	"name": "kra-types",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -14,5 +14,14 @@
 	"scripts": {
 		"build": "tsc",
 		"publish": "npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fkkmemi/kra-types.git"
+	},
+	"author": {
+		"name": "fkkmemi",
+		"email": "fkkmemi@gmail.com",
+		"url": "https://memi.dev/"
 	}
 }
