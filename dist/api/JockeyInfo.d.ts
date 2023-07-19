@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const jockeyInfoInfo: DataInfo;
 export interface JockeyInfoRequestParams extends RequestParams {
     jk_name?: string;
     jk_no?: string;

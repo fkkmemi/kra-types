@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const startingTrainingInfo: DataInfo;
 export interface StartingTrainingRequestParams extends RequestParams {
     tr_year?: number;
     tr_month?: number;

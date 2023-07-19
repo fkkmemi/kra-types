@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const dailyTrainingInfo: DataInfo;
 export interface DailyTrainingRequestParams extends RequestParams {
     hr_name?: string;
     hr_no?: string;

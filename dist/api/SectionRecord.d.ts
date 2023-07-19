@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const sectionRecordInfo: DataInfo;
 export interface SectionRecordRequestParams extends RequestParams {
     hr_name?: string;
     hr_no?: string;

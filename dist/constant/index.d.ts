@@ -1,16 +1,23 @@
+import DataInfo from '../common/DataInfo';
+import MeetRecord from '../common/MeetRecord';
 export declare const baseURL = "https://apis.data.go.kr";
 export declare const apiURL: (no: string) => string;
-interface MeetRecord {
-    no: number;
-    label: string;
-    color: string;
-    colorCode: string;
-    imagePub: string;
-    name: string;
-    dists: number[];
-}
+export declare const dailyTrainingInfo: DataInfo;
+export declare const entryHorseWeightInfoInfo: DataInfo;
+export declare const jockeyInfoInfo: DataInfo;
+export declare const jockeyResultInfo: DataInfo;
+export declare const raceHorseClinicInfo: DataInfo;
+export declare const raceHorseInfoInfo: DataInfo;
+export declare const raceHorseResultInfo: DataInfo;
+export declare const racePlanInfo: DataInfo;
+export declare const raceResultInfo: DataInfo;
+export declare const ridingTestResultInfo: DataInfo;
+export declare const sectionRecordInfo: DataInfo;
+export declare const startingTrainingInfo: DataInfo;
+export declare const swimTrainingInfo: DataInfo;
+export declare const trackInfo: DataInfo;
+export declare const trainerInfoInfo: DataInfo;
 export declare const Meet: Record<string, MeetRecord>;
 export declare const MeetInfos: MeetRecord[];
 export declare const WeekMeets: Record<number, string[]>;
 export declare const SexText: Record<string, string>;
-export {};

@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const trackInfo: DataInfo;
 export interface TrackRequestParams extends RequestParams {
     hr_name?: string;
     hr_no?: string;

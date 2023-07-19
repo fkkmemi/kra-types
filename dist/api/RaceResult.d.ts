@@ -1,6 +1,4 @@
 import { RequestParams } from '../common/RequestData';
-import DataInfo from '../common/DataInfo';
-export declare const raceResultInfo: DataInfo;
 export interface RaceResultRequestParams extends RequestParams {
     meet?: number;
     rc_date?: number;

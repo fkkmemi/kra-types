@@ -1,6 +1,6 @@
 {
 	"name": "kra-types",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
 	"author": {
 		"name": "fkkmemi",
 		"email": "fkkmemi@gmail.com",
-		"url": "https://memi.dev/"
+		"url": "https://memi.dev"
 	},
-	"homepage": "https://memi.dev/"
+	"homepage": "https://memi.dev"
 }
